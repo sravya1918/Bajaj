@@ -20,13 +20,13 @@ public class Application {
     private String submitUrl;
 
     @Value("${hfx.payload.name}")
-    private String name;
+    private String Sravya;
 
     @Value("${hfx.payload.regNo}")
-    private String regNo;
+    private String 22BCE9978;
 
     @Value("${hfx.payload.email}")
-    private String email;
+    private String sravya.22bce9978@vitapstudent.ac.in;
 
     public static void main(String[] args) {
         SpringApplication.run(Application.class, args);
@@ -42,9 +42,9 @@ public class Application {
         return args -> {
             // Step 1: Generate webhook
             Map<String, String> reqBody = Map.of(
-                "name", name,
-                "regNo", regNo,
-                "email", email
+                "name", Sravya,
+                "regNo", 22BCE9978,
+                "email", sravya.22bce9978@vitapstudent.ac.in
             );
 
             webClient.post()
@@ -101,3 +101,4 @@ public class Application {
         return 0;
     }
 }
+
